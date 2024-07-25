@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Base To Another Base</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="select">
+        <select onchange="navigate(this.value)">
+            <option value="baseToBase.html">Base to New Base</option>
+            <option value="binaryToDecimal.html">Binary to Decimal</option>
+            <option value="decimalToNewBase.html">Decimal to New Base</option>
+        </select>
+    </nav>
+
+    <div class="container">
+        <input type="text" id="valueOfBase" placeholder="Value">
+
+        <div id="inputs-container">
+            <input type="text" id="curBase" placeholder="Current Base">
+            <input type="text" id="newBase" placeholder="New Base">
+        </div>
+
+        <div id="generate">
+            <button onclick="convertBases()" class="ger">Convert</button>
+        </div>
+    </div>
+
+    <div class="result">
+        <input type="display" id="res" readonly>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

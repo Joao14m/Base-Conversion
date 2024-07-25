@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decimal to New Base</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="select">
+        <select onchange="navigate(this.value)">
+            <option value="decimalToNewBase.html">Decimal to New Base</option>
+            <option value="binaryToDecimal.html">Binary to Decimal</option>
+        </select>
+    </nav>
+
+    <div class="container">
+        <div id="inputs-container">
+            <input type="text" id="binaryBox" placeholder="Decimal Value">
+            <input type="text" id="newBase" placeholder="New Base">
+        </div>
+
+        <div id="generate">
+            <button onclick="convertDecimal()" class="ger">Convert</button>
+        </div>
+    </div>
+
+    <div class="result">
+        <input type="display" id="res" readonly>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
